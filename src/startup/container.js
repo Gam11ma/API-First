@@ -34,12 +34,6 @@ container.register({
     CommentService: asClass(CommentService).singleton()
 })
 .register({
-    HomeService: asClass(HomeService).singleton(),
-    UserService: asClass(UserService).singleton(),
-    IdeaService: asClass(IdeaService).singleton(),
-    CommentService: asClass(CommentService).singleton()
-})
-.register({
     HomeController: asClass(HomeController.bind(HomeController)).singleton(),
     UserController: asClass(UserController.bind(UserController)).singleton(),
     IdeaController: asClass(IdeaController.bind(IdeaController)).singleton(),
